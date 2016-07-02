@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/product_list_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_background">
+
+    <ImageView
+        android:id="@id/iv_product_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_dog_image_height"
+        android:layout_margin="0.1dp"
+        android:scaleType="fitXY" />
+
+    <com.example.sumit.apple.views.TypefaceTextView
+        android:id="@id/tv_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_product_list_item"
+        android:layout_marginRight="10.0dip"
+        android:gravity="left"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/ultra_dark"
+        android:textSize="@dimen/item_text_size"
+        app:customTypeface="@string/typeface_regular" />
+
+    <com.example.sumit.apple.views.TypefaceTextView
+        android:id="@id/tv_item_unit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_item_name"
+        android:lines="1"
+        android:paddingLeft="10.0dip"
+        android:textColor="@color/ultra_dark"
+        android:textSize="@dimen/item_text_size"
+        app:customTypeface="@string/typeface_bold" />
+
+
+    <com.example.sumit.apple.views.TypefaceTextView
+        android:id="@id/tv_item_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_item_unit_price"
+        android:layout_below="@id/tv_item_name"
+        android:layout_marginLeft="4.0dip"
+        android:layout_toRightOf="@id/tv_item_unit_price"
+        android:lines="1"
+        android:paddingTop="2.0dip"
+        android:textColor="@color/item_mrp_color"
+        android:textSize="@dimen/item_mrp_text_size"
+        app:customTypeface="@string/typeface_bold" />
+
+    <com.example.sumit.apple.views.TypefaceTextView
+        android:id="@id/tv_item_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_item_unit_price"
+        android:layout_below="@id/tv_item_name"
+        android:layout_marginLeft="4.0dip"
+        android:layout_toRightOf="@id/tv_item_mrp"
+        android:lines="1"
+        android:paddingTop="2.0dip"
+        android:textColor="@color/red"
+        android:textSize="@dimen/item_discount_text_size"
+        app:customTypeface="@string/typeface_regular"
+        />
+
+
+    <ImageView
+        android:id="@id/iv_item_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_product_list_item"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="10.0dip"
+        android:src="@drawable/ic_heart" />
+
+</RelativeLayout>

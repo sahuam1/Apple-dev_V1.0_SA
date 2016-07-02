@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@id/home"
+            android:icon="@mipmap/ic_home_black_18dp"
+            android:title="@string/Home" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/ic_person_white_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@id/orders"
+            android:icon="@mipmap/ic_list_black_24dp"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/wishList"
+            android:icon="@mipmap/ic_favorite_black_24dp"
+            android:title="@string/ContactUs" />
+
+        <item
+            android:id="@+id/notifications"
+            android:icon="@mipmap/ic_contact_phone_black_18dp"
+            android:title="@string/TC" />
+
+        <item
+            android:id="@id/AboutUs"
+            android:icon="@mipmap/ic_pets_black_24dp"
+            android:title="@string/AboutUs" />
+
+        <!--<item
+            android:title="@string/login"
+            android:id="@+id/Login"
+            android:icon="@drawable/ic_one"
+            android:visible="true"/>-->
+
+        <item android:title="">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+
+                        android:title="Invite and Earn" />
+                    <item
+
+                        android:title="Rating" />
+                    <item
+                        android:title="@string/login"
+                        android:id="@+id/Login"
+
+                        android:visible="true"/>
+                    <item
+
+                        android:title="Give Us Feedback"/>
+                    <item
+
+                        android:title="Contact Us"/>
+
+
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
+

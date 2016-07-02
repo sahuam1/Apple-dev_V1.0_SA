@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "348438575489",
+    "project_id": "apple-dev-retr"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348438575489:android:e1cd8f5a5fc53ecb",
+        "android_client_info": {
+          "package_name": "com.example.sumit.apple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348438575489-8g0kt7krl93utsi12m23ht9rgodpkgka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sumit.apple",
+            "certificate_hash": "971B080964D709F17F800950E7DDA2B57D4932CD"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
